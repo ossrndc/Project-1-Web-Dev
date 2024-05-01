@@ -14,7 +14,21 @@
   --main-font: "Playfair Display SC", serif;
   --primary-font: "Roboto", sans-serif;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: #1e1919;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #76e1ff, rgb(245, 6, 233));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom,  #76e1ff, rgb(245, 6, 233) );
+}
 
 .nav {
   background-image: linear-gradient(to right, #9E768F , #9FA4C4);
@@ -32,7 +46,10 @@
   text-decoration: none;
   font-size: 20px;
   font-weight:bolder;
+  margin-right:180px;
+  
 }
+
 
 .nav a:hover {
   background-color: #ddd;
@@ -42,6 +59,7 @@
 
 .nav a.active {
   background-color:#9FA4C4;
+  margin-left: 80px;
   color:black;
 }
 .heading{
@@ -131,7 +149,7 @@ header {
 
 .header-img {
   border-radius: 100%;
-  background: url(imagesbanez-1NPUmTaiMeg-unsplash.jpg);
+  background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
   background-position: top;
   background-size: cover;
   width: 400px;
@@ -173,7 +191,7 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .products .products-heading {
@@ -188,10 +206,12 @@ header {
 }
 
 .products .product-items-container {
-    
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly; 
-  margin: 20px;
-  max-width: 60rem; 
+  margin: 60px;
+  /* max-width: 60rem;  */
+  margin-right: 80px;
 }
 
 .products .product-items-container .item {
