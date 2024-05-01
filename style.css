@@ -17,7 +17,7 @@
 
 
 .nav {
-  /* position: fixed; */
+  position: fixed;
   margin-right: 20px;
   top: 0;
   left: 0;
@@ -139,7 +139,7 @@ header {
 
 .header-img {
   border-radius: 100%;
-  background: url(imagesbanez-1NPUmTaiMeg-unsplash.jpg);
+  background: url(images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg);
   background-position: top;
   background-size: cover;
   width: 400px;
@@ -295,6 +295,24 @@ header {
 .customer-img .img-three {
   background: url(images/milan-popovic-kOnmHdLJTNI-unsplash.jpg);
 }
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #9E768F , #9FA4C4);
+  border-radius: 6px;
+  height: 20px; 
+}
+
+
+
+
 
 footer {
   background: #1f1e1e;
